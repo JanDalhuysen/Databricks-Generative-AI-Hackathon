@@ -31,7 +31,7 @@ app.get("/SimpleStockSense_step_one/:share_name", (req, res) => {
   let fetch_string =
     "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=" +
     share_name +
-    "&apikey=QUB75QBDEXT3XIPV";
+    "&apikey=yourAPIkey";
   fetch(fetch_string, {
     method: "GET",
     headers: {
@@ -52,7 +52,7 @@ app.get("/SimpleStockSense_step_one/:share_name", (req, res) => {
           },
         ],
       };
-      const token = "dapice5215e759e7dd9465e40d6bf9987897";
+      const token = "yourAPIkey";
       const url =
         "https://dbc-870667d8-4476.cloud.databricks.com/serving-endpoints/databricks-llama-2-70b-chat/invocations";
       fetch(url, {
