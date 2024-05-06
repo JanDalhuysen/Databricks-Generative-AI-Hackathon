@@ -54,7 +54,7 @@ app.get("/SimpleStockSense_step_one/:share_name", (req, res) => {
       };
       const token = "yourAPIkey";
       const url =
-        "https://dbc-870667d8-4476.cloud.databricks.com/serving-endpoints/databricks-llama-2-70b-chat/invocations";
+        "https://dbc-870667d8-4476.cloud.databricks.com/serving-endpoints/databricks-llama-3-70b-chat/invocations";
       fetch(url, {
         method: "POST",
         headers: {
